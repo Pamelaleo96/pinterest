@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?k9bglc');
-  src:  url('fonts/icomoon.eot?k9bglc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?k9bglc') format('truetype'),
-    url('fonts/icomoon.woff?k9bglc') format('woff'),
-    url('fonts/icomoon.svg?k9bglc#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?fjpq6q');
+  src:  url('fonts/icomoon.eot?fjpq6q#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fjpq6q') format('truetype'),
+    url('fonts/icomoon.woff?fjpq6q') format('woff'),
+    url('fonts/icomoon.svg?fjpq6q#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-logopinterest:before {
+  content: "\e900";
+  color: #bd081c;
+}
 .icon-guardar:before {
   content: "\e946";
 }

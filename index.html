@@ -3,183 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <title>Pinterest</title>
-    <link rel="stylesheet" href="assets/icons/icommon/style.css">
+    <link rel="shorcut icon" type="image/logo.png" href="assets/imgs/nav/logo.png"><!--Imagen que se mostrara en mi navegador-->
     <link rel="stylesheet" href="assets/icons/font-awesome/css/font-awesome.min.css"><!--Enlazar archivo externo  font-awesome con html-->    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <ul class="nav-menu">
-            <li class="logo"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
-            </li>
-            <li class="buscador">
-                <div class="caja-lupa">
-                    <i class="fa fa-search fa-lg" aria-hidden="true">
-                    </i>
-                    <input type="text" placeholder="Buscar">   
-                </div>   
-            </li>
-            <li class="usuario">
-                <span>
-                    <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
-                </span>
-            </li>
-            <li class="secciones">
-                <a class="btn btn-primary" href="#navigation-main" aria-label="Skip to main navigation">
-                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        <ul class="menu">
+            <li class="logo">
+                <a href="index.html">
+                   <i class="fa fa-pinterest fa-2x" aria-hidden="true"></i>
                 </a>
             </li>
-            <li class="notificacion">
-                    <i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
+
+            <li class="search">           
+                <i class="fa fa-search fa-lg lupa" aria-hidden="true"></i>
+                <input type="text" placeholder="Search">
+                <i class="fa fa-times fa-lg" aria-hidden="true"></i>   
+                <span>All pins</span> 
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </li>
-                    
+
+            <li class="options">
+                <a class="usuario"> <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+            </li>
+
+            <li class="options">
+                <a class="section"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>     
+            </li>
+
+            <li class="options">
+                <a class="notificacion"><i class="fa fa-commenting fa-2x" aria-hidden="true"></i></a>   
+            </li>            
         </ul>
+<div class="horizontal">
+    <hr> 
+</div>     
 
-        <div class="sub-menu">
-
-            <div class="boton1">
-                <a src="" href="">De frutas</a>
-            </div>
-
-            <div class="boton2">
-                <a src="" href="">Desayuno</a>
-            </div>
-
-            <div class="boton3">
-                <a src="" href="">Saludable</a>
-            </div>
-            <div class="boton4">
-                <a src="" href="">Desintoxicante</a>
-            </div>
-    
-         <div class="boton5">
-             <a src="" href="">Verdes</a>
-        </div>
-    
-        <div class="boton6">
-             <a src="" href="">Antigripales</a>
-        </div>
-
-        <div class="boton7">
-            <a src="" href="">Energeticos</a>
-        </div>
-    
-        <div class="boton8">
-            <a src="" href="">Quema grasa</a>
-        </div>
-    
-        <div class="boton9">
-            <a src="" href="">Recetas</a>
-        </div>
+        <ul class="sub-menu">
+            <li class="boton">
+                <p class="verde">De frutas</p>
+            </li>
+            <li class="boton">
+                <p class="marron">Desayuno</p>
+            </li>
+            <li class="boton">
+                <p class="rojo">Saludable</p>
+            </li>
+            <li class="boton">
+                <p class="verde">Desintoxicante</p>
+            </li>
+            <li class="boton">
+                <p class="purple">Nutritivo</p>
+            </li>
+            <li class="boton">
+                <p class="verde">Verdes</p>
+            </li>
+            <li class="boton">
+                <p class="rojo">Antigripales</p>
+            </li>
+            <li class="boton">
+                 <p class="marron">Energeticos</p>
+            </li>
+            <li class="boton">
+                <p class="verde">Quema grasa</p>
+            </li>
+            <li class="boton">
+                <p class="naranja">Recetas</p>
+            </li>
+        </ul>
     </header>
 
-    <section class="imagenes">
-        <div>
-            <img src="assets/imgs/anticancer.jpg" alt="">jugos</a>
-            <h4>Desayuno saludable</h4>
-            <p>Receta avena saludable, energetico para todos los dias</p>
-        </div>
-        <div>
-            <img src="assets/imgs/bajarpeso.jpg" alt="">jugos</a>
-            <h4>Licuado Anticancer</h4>
-            <p>Licuado de dia para prevenir el cancer</p>
+    <main class="imagenes" id="imagenes">
+        <div class="col">
+            <div class="box">
+                <a href="assets/imgs/anticancer.jpg" alt="anticancer">
+                <img src="assets/imgs/anticancer.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>   
             </div>
-        <div>
-            <img src="assets/imgs/cansancio.jpg" alt="">jugos</a>
-            <h4>Desayuno saludable</h4>
-            <p>Receta avena saludable, energetico para todos los dias</p>
+            <div class="box">
+                <a href="assets/imgs/avena.jpg" alt="bajar-peso">
+                <img src="assets/imgs/avena.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/bajarpeso.jpg" alt="cansancio">
+                <img src="assets/imgs/bajarpeso.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/cansancio.jpg" alt="cansancio">
+                <img src="assets/imgs/cansancio.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/desayuno.jpg" alt="cansancio">
+                <img src="assets/imgs/desayuno.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="assets/imgs/desayuno.jpg" alt="">jugos</a>
-            <h4>Licuado Anticancer</h4>
-            <p>Licuado de dia para prevenir el cancer</p>
-        </div>
-        <div>
-            <img src="assets/imgs/desayuno2.jpg" alt="">jugos</a>
-            <h4>Desayuno saludable</h4>
-            <p>Receta avena saludable, energetico para todos los dias</p>
-        </div>
-        <div>
-            <img src="assets/imgs/desayunoenergetico.jpg" alt="">jugos</a>
-            <h4>Licuado Anticancer</h4>
-            <p>Licuado de dia para prevenir el cancer</p>
-        </div>
-        <div>
-            <img src="assets/imgs/detox.jpg" alt="">jugos</a>
-            <h4>Desayuno saludable</h4>
-            <p>Receta avena saludable, energetico para todos los dias</p>
+        
+        <div class="col">
+            <div class="box">
+                <a href="assets/imgs/desayuno2.jpg" alt="cansancio">
+                <img src="assets/imgs/desayuno2.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/desayunoenergetico.jpg" alt="cansancio">
+                <img src="assets/imgs/desayunoenergetico.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/detox.jpg" alt="cansancio">
+                <img src="assets/imgs/detox.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/detox2.jpg" alt="cansancio">
+                <img src="assets/imgs/detox2.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <a href="assets/imgs/farmacianatural.jpg" alt="farmacianatural">
+                <img src="assets/imgs/farmacianatural.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <img src="assets/imgs/detox2.jpg" alt="">jugos</a>
-            <h4>Desayuno saludable</h4>
-            <p>Receta avena saludable, energetico para todos los dias</p>
+        <div class="col">
+            <div class="box">
+                <a href="assets/imgs/fresa.jpg" alt="cansancio">
+                <img src="assets/imgs/fresa.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/jugosfrutas.jpg" alt="cansancio">
+                <img src="assets/imgs/jugosfrutas.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/jugoverde.jpg" alt="cansancio">
+                <img src="assets/imgs/jugoverde.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/jugoverde2.jpg" alt="cansancio">
+                <img src="assets/imgs/jugoverde2.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/licuado.jpg" alt="farmacianatural">
+                <img src="assets/imgs/licuado.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="assets/imgs/farmacianatural.jpg" alt="">jugos</a>
-            <h4>Licuado Anticancer</h4>
-            <p>Licuado de dia para prevenir el cancer</p>
+
+        <div class="col">
+            <div class="box">
+                <a href="assets/imgs/piña.jpg" alt="cansancio">
+                <img src="assets/imgs/piña.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/zanahoria.jpg" alt="cansancio">
+                <img src="assets/imgs/zanahoria.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/saludables.jpg" alt="cansancio">
+                <img src="assets/imgs/saludables.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/smoothiesbanana.jpg" alt="cansancio">
+                <img src="assets/imgs/smoothiebanana.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <a href="assets/imgs/smothies.jpg" alt="farmacianatural">
+                <img src="assets/imgs/smothies.jpg"></a>
+                <div id="detail">
+                    <h4>Desayuno saludable</h4>
+                    <p>Receta avena saludable, energetico para todos los dias</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="assets/imgs/fresa.jpg" alt="">jugos</a>
-            <h4>Desayuno saludable</h4>
-            <p>Receta avena saludable, energetico para todos los dias</p>
-        </div>
-        <div>
-           <img src="assets/imgs/jugosfrutas.jpg" alt="">jugos</a>
-           <h4>Licuado Anticancer</h4>
-            <p>Licuado de dia para prevenir el cancer</p>
-        </div>
-        <div>
-                <img src="assets/imgs/jugoverde.jpg" alt="">jugos</a>
-                <h4>Desayuno saludable</h4>
-                <p>Receta avena saludable, energetico para todos los dias</p>
-            </div>
-            <div>
-                <img src="assets/imgs/jugoverde2.jpg" alt="">jugos</a>
-                <h4>Licuado Anticancer</h4>
-                <p>Licuado de dia para prevenir el cancer</p>
-            </div>
-            <div>
-                <img src="assets/imgs/licuado.jpg" alt="">jugos</a>
-                <h4>Desayuno saludable</h4>
-                <p>Receta avena saludable, energetico para todos los dias</p>
-            </div>
-            <div>
-                <img src="assets/imgs/piña.jpg" alt="">jugos</a>
-                <h4>Licuado Anticancer</h4>
-                <p>Licuado de dia para prevenir el cancer</p>
-            </div>
-            <div>
-                <img src="assets/imgs/quemagrasa.jpg" alt="">jugos</a>
-                <h4>Desayuno saludable</h4>
-                <p>Receta avena saludable, energetico para todos los dias</p>
-            </div>
-            <div>
-                <img src="assets/imgs/saludables.jpg" alt="">jugos</a>
-                <h4>Licuado Anticancer</h4>
-                <p>Licuado de dia para prevenir el cancer</p>
-            </div>
-            <div>
-                <img src="assets/imgs/smoothiebanana.jpg" alt="">jugos</a>
-                <h4>Desayuno saludable</h4>
-                <p>Receta avena saludable, energetico para todos los dias</p>
-            </div>
-            <div>
-                <img src="assets/imgs/smothies.jpg" alt="">jugos</a>
-                <h4>Licuado Anticancer</h4>
-                <p>Licuado de dia para prevenir el cancer</p>
-            </div>
-            <div>
-                <img src="assets/imgs/smothiespinaca.jpg" alt="">jugos</a>
-                <h4>Desayuno saludable</h4>
-                <p>Receta avena saludable, energetico para todos los dias</p>
-            </div>
-            <div>
-                <img src="assets/imgs/zanahoria.jpg" alt="">jugos</a>
-                <h4>Desayuno saludable</h4>
-                <p>Receta avena saludable, energetico para todos los dias</p>
-            </div>
-        </section>  
+    </main>  
 </body>
 </html>

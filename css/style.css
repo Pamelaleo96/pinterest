@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box; /*Respeta todos los anchos y largos*/
+    font-weight: bold; /*cambia el grosor de la letra*/
+    font-family: sans-serif;/*Asigna un tipo de letra*/
+}
+
+header {
+    position: fixed; /*el navegador se mantiene fixed*/
+    top: 0;
+    width: 100%; /*Afectara a toda la pantalla*/
+    background: white; /*El color de fondo para fixed*/
+    list-style: none; /*Elimina viñeta de la lista ordenada*/
+}
+
+.menu {
+    /*outline: 1px solid blue;*/
+    margin: 2px;
+}
+
+
+header li{ /*Inline block*/
+    /*outline: 1px solid red;*/
+    display: inline-block; /*Convierte la lista en inline-bloque*/
+
+   
+}
+.sub-menu {
+    text-align: center;
+}
+
+.logo .fa-pinterest {
+    color: rgb(196, 38, 38);
+   /*outline: 1px solid skyblue;*/
+    margin: 10px 5px 10px 5px;
+    padding: 5px;
+}
+
+.search {
+    background-color: #f1f1f1;
+    border: none;
+    width: 1010px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border: 0;
+    color: rgb(107, 106, 106);
+    height: 20px;
+    width: 800px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fa-times{
+    color:#b5b5b5;
+}
+.lupa {
+    color:#b5b5b5;
+}
+
+.options {
+    /*outline: 1px solid skyblue;*/
+    color:#b5b5b5;
+    margin: 10px 12px 10px 5px;
+    padding: 5px;
+}
+
+.horizontal {
+    margin-top: 0px;
+    color: #f3f2f2;
+}
+
+/*Asignamos diseño a nuestro sub-menu botones*/
+.sub-menu p{
+    /*outline: 1px solid yellow;*/
+    text-align: center; 
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+    display: block;
+    padding: 18px;
+    margin: 5px;
+}
+
+
+/*Colocamos color de fondo a nuestros botones del sub-menu*/
+.verde {
+    background-color: rgb(159, 173, 124);
+    background-image: url("https://i.pinimg.com/111x55_sf-76/c6/66/18/c666189fabb051f8aaa7b2517b27e5c3.jpg");
+}
+
+.naranja {
+    background-color: rgb(255, 193, 163);
+    background-image: url("https://i.pinimg.com/111x55_sf-76/4b/b2/2d/4bb22d51b87d0eb717436f7913258008.jpg");
+}
+
+.purple {
+    background-color: rgb(223, 140, 223);
+    background-image: url("https://i.pinimg.com/111x55_sf-76/27/ff/2d/27ff2dbd5764e48a58633e9e1f8ef05b.jpg");
+}
+
+.rojo {
+    background-color: rgb(226, 162, 153);
+    background-image: url("https://i.pinimg.com/111x55_sf-76/ab/21/69/ab21697987aa348fa8913113b5796a9a.jpg");
+}
+
+.marron {
+    background-color: rgb(73,74,66);
+    background-image: url("https://i.pinimg.com/111x55_sf-76/cb/4a/1e/cb4a1e2cb5773eb38aa55c78661ec2f4.jpg");
+}
+
+main {
+    /*outline: 1px solid red;*/
+    margin: 20px;
+}
+
+.box {
+    margin: 20px 10px;
+}
+
+img {
+    /*outline: 1px solid green;*/
+    font-weight: bold;
+    border-radius: 8px;
+    width: 350px;
+}
+
+#detail {
+    /*outline: 1px solid purple;*/
+    text-align: left;
+}
+
+h4 {
+    margin: 2px 0px 3px 0px;
+    color: rgb(99, 168, 31);
+}
+
+p {
+    margin-top: 2px;
+    color: rgb(124, 119, 119);
+}
+
+#imagenes { /*Colocamos nuestra galeria de imagenes en columnas*/
+    column-width: 300px;
+    column-count: 4;
+}
